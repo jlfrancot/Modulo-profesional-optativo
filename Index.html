@@ -5,8 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto Web</title>
 </head>
+<header>
+    <img src="imagenes/logo.jpeg" alt="Logotipo del sitio">
+</header> 
 <body>
-    <h1>Bienvenido/a a mi sitio web</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Horario">Horario</a></li>
+            <li><a href="#Galeria">Galeria</a></li>
+        </ul>
+    </nav>    
+    <hr>
+  
+    <h1 id="Inicio">Bienvenido/a a mi sitio web</h1>
     <p>Este es un proyecto para aprender Git y GitHub.</p>
+    <hr>
+    <section id="Contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>    
+    <hr>
+    <section id="Horario">
+        <h2>Horario de Clases</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Asignatura</th>
+                    <th>Hora</th>
+                    <th>Tarea</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes y Miércoles</td>
+                    <td>Bases de datos</td>
+                    <td>09:00 - 12:00</td>
+                    <td>Acceso SQL</td>
+                </tr>
+                <tr>
+                    <td>Martes y Jueves</td>
+                    <td>Programación</td>
+                    <td>12:00 - 14:00</td>
+                    <td>Desarrollo Java</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>   
+    <hr>
+    <section id="Galeria">
+        <h2>Galería de Imágenes</h2>
+        <div style="display: flex; gap: 10px;">
+            <img src="imagenes/Image1.jpeg" alt="Imagen 1">
+            <img src="imagenes/Image2.jpeg" alt="Imagen 2">
+        </div>
+    </section>    
 </body>
+<hr>
+<footer>
+    <p>Redes sociales:</p>
+    <ul>
+        <li><a href="#">Tik Tok</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+    </ul>
+</footer>
 </html>
